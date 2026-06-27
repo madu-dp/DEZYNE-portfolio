@@ -1,0 +1,153 @@
+.about-page {
+  width: 100%;
+  padding-bottom: 120px;
+}
+
+.about-hero {
+  padding: 120px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 4rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 0 24px;
+  max-width: 1400px;
+  margin: 80px auto;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 24px;
+}
+
+.stat-card h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+.stat-card p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Career Section */
+.about-career-section {
+  padding: 80px 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-top: 1px solid var(--border-color);
+}
+
+.career-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.career-header span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.career-header h3 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0;
+  max-width: 600px;
+}
+
+.career-timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.career-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 32px 0;
+  border-top: 1px solid var(--border-color);
+  transition: opacity 0.3s ease;
+}
+
+.career-item:last-child {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.career-item:hover {
+  opacity: 0.6;
+}
+
+.career-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.career-left h4 {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 700;
+  margin: 0;
+}
+
+.career-role {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.career-right {
+  flex-shrink: 0;
+}
+
+.career-period {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 900px) {
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .career-item {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+

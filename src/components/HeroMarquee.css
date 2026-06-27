@@ -1,0 +1,44 @@
+.hero-marquee-container {
+  width: 100%;
+  padding: 40px 0;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  /* Fog effect on left and right edges */
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.hero-strips {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  align-items: center; 
+}
+
+.hero-strip {
+  width: 240px;
+  height: 480px;
+  overflow: hidden;
+  background: var(--bg-secondary);
+  flex-shrink: 0;
+}
+
+.hero-strip img,
+.hero-strip video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .hero-strip {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-strip {
+    height: 250px;
+  }
+}

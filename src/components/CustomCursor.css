@@ -1,0 +1,39 @@
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: difference;
+}
+
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+}
+
+.cursor-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.1em;
+}
+
+.cursor-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.cursor-text-container {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
